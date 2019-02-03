@@ -1,0 +1,411 @@
+/* CSS reset code*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset code */
+
+Body{
+	font-family: trebuchet ms, sans-serif;
+	font-size: 15px;
+	line-height: 22px;
+	background-color: #e6e6e6;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header, main, footer {
+	width: 100%;
+}
+.headerContainer, .mainContainer, .footerContainer {
+ width: 1124px;
+}
+header {
+	background-color: #d3135a;
+	display: flex;
+	justify-content: center;
+}
+.headerContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 1em 0 1em;
+	min-height: 100px;
+}
+h1{
+	color: #ffc2dd;
+	font-size: 60px;
+	margin-left: 0.25em;
+	align-self: flex-end;
+	font-weight: bold;
+	padding-bottom: 16px;
+	line-height: 48px;
+}
+
+.headerMenus{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-right: 1em;
+}
+
+.mainMenu ul, .topMenu ul{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.mainMenu ul li {
+	font-size: 21px;
+	color: White;
+  padding-left: 1em;
+	padding-bottom: 16px;
+}
+.mainMenu ul li:hover {
+	color: black;
+	cursor: pointer;
+}
+.topMenu ul li {
+	font-size: 14.5px;
+  padding-left: 1em;
+}
+.topMenu ul li:hover {
+	color: white;
+	cursor: pointer;
+}
+.mainMenu ul li:first {
+	position: absolute;
+}
+.dropdownMenu {
+	position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+	left: -10px;
+	top: 38px;
+	background-color: #4d4d4d;
+	min-width: 160px;
+	z-index: 1;
+
+}
+.dropdown-content:before {
+    content:"";
+    position: absolute;
+    left: 70px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #4d4d4d transparent;
+    z-index:9999;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #666666;
+}
+.dropdownMenu:hover {
+	color: black;
+}
+/* Show the dropdown menu on hover */
+.dropdownMenu:hover .dropdown-content {
+	display: block;
+}
+
+main {
+	background-color: #e6e6e6;
+	display: flex;
+	justify-content: center;
+}
+
+.mainContainer {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+.mainContent {
+	display: flex;
+	flex-direction: row;
+}
+
+.Articles {
+	flex: 5;
+}
+
+.rightWidget {
+	flex: 2;
+	padding: 1em 1em 1em 0;
+}
+
+h2 {
+	font-family: times new roman, serif;
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 38px;
+}
+.mainArticle {
+	background-color: white;
+	padding: 1em;
+	margin: 1em;
+}
+
+.mainArticle h2{
+	padding-bottom: 0.5em;
+}
+.mainArticle p {
+	padding-bottom: 1em;
+	font-weight: normal;
+}
+.twoArticles {
+	background-color: #e6e6e6;
+	display: flex;
+	flex-direction: row;
+	margin: 1em;
+}
+.leftArticle, .rightArticle {
+	padding: 1em;
+	background-color: white;
+	flex: 1;
+}
+.rightArticle {
+	margin-left: 1em;
+}
+h3 {
+	font-weight: bold;
+	font-family: serif;
+	font-size: 24px;
+	padding-bottom: 0.5em;
+}
+.rightArticle ul li {
+	color: #0071bc;
+	border-bottom: solid 1px #e6e6e6;
+	padding: 0.5em 0;
+}
+.rightArticle ul li:hover {
+  cursor: pointer;
+	font-weight: bold;
+}
+
+.rightArticle ul li:last-child {
+	border-bottom: none;
+}
+
+.rightWidget h3 {
+	border-bottom: 3px solid black;
+}
+.rightWidget p {
+	padding: 1em 0;
+}
+.form {
+	border: 1px solid #898989;
+	margin-top: 0.5em;
+	padding: 1em 1em;
+}
+label {
+	margin-bottom: 0.5em;
+}
+input[type=text], textarea[type=text]{
+ padding: 0.4em;
+ color: #929292;
+ border: 1px solid #898989;
+ width: 95%;
+ max-width: 300px;
+ margin-top: 0.5em;
+ margin-bottom: 1.2em;
+ font-size: 15px;
+ font-family: trebuchet ms;
+}
+#message {
+	min-height: 100px;
+}
+input[type=submit]{
+	background-color: #d3135a;
+	color: white;
+	font-size: 1em;
+	padding: 0.8em 1.6em;
+	border: none;
+	letter-spacing: 2px;
+}
+input[type=submit]:hover{
+	color: #d3135a;
+	background-color: white;
+	cursor: pointer;
+}
+.bottomArticle {
+	background-color: #ccc;
+	display: flex;
+	flex-direction: row;
+	margin: 0 1em 0 1em;
+}
+.bottomArticle p {
+	padding: 1em;
+}
+footer {
+	background-color: #666;
+	display: flex;
+  justify-content: center;
+}
+.footerContainer{
+	padding: 1em 1em;
+}
+.footerMenu {
+	padding: 0 1em;
+}
+
+.footerMenu ul {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+.footerMenu ul li {
+	font-weight: bold;
+	padding-right: 1em;
+	color: white;
+	font-size: 13px;
+}
+.footerMenu ul li a {
+	text-decoration: none;
+	color: white;
+}
+.footerMenu ul li a:hover {
+	color: black;
+	cursor: pointer;
+}
+.footerContent{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	color: #ccc;
+	padding: 1em 1em 0 1em;
+	font-size: 13px;
+	line-height: 15px;
+}
+.footerContent h4 {
+  color: white;
+	font-size: 34px;
+	font-weight: bold;
+	padding-left: 1em;
+	min-width: 132px;
+	align-self: flex-end;
+	line-height: 34px;
+}
+
+/* ----SMALL screen START-----*/
+/* If the screen size is 600px or less, set the */
+@media only screen and (max-width: 600px) {
+	html{
+		width: 100%;
+		height: auto;
+	}
+	h1 {
+		margin-left: 0;
+    align-self: flex-start;
+	}
+	.mainMenu ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	.mainMenu ul li {
+		padding-left: 0;
+	}
+	.dropdown-content {
+		top: 60px;
+	}
+	.dropdown-content:before{
+		left: 30px;
+	}
+	.headerContainer {
+		padding-right: 0;
+	}
+	.mainMenu ul {
+    justify-content: space-around;
+	}
+	.topMenu {
+		display: none;
+	}
+	.headerContainer {
+		flex-direction: column;
+	}
+	.mainContent {
+		flex-direction: column;
+	}
+	.rightWidget {
+		padding-left: 1em;
+	}
+	.twoArticles {
+		flex-direction: column;
+	}
+	.rightArticle {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+	.bottomArticle {
+		flex-direction: column;
+	}
+	.footerMenu {
+   display: none;
+	}
+	.footerContent {
+		flex-direction: column;
+		padding: 0 0;
+	}
+	h4 {
+		margin-top: 16px;
+	}
+	.mainContainer {
+    padding-top: 0;
+  }
+}
+/* ----SMALL screen END-----*/
